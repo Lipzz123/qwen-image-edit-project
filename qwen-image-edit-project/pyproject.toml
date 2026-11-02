@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-image-edit-colab"
+version = "0.1.0"
+description = "Notebook helper package for Qwen Image Edit 2.1 on Google Colab"
+requires-python = ">=3.10"
+dependencies = ["requests", "Pillow", "huggingface_hub", "ipywidgets"]
+
+[tool.setuptools.packages.find]
+include = ["qwen_editor*"]
